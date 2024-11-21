@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Map - Astronomy Edition</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Meteo Map - Astronomy Edition</h2>
+        <input type="text" id="city" placeholder="Enter City">
+        <button onclick="getWeather()">Search</button>
+        
+        <!-- Stargazing Mode Toggle -->
+        <div id="stargazing-toggle">
+            <input type="checkbox" id="stargazing-mode" onclick="toggleStargazingMode()">
+            <label for="stargazing-mode">Stargazing Mode</label>
+        </div>
+
+        <img id="weather-icon" alt="Weather Icon" onerror="this.style.display='none';">
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="astronomy-alerts"></div>
+        <div id="hourly-forecast"></div>
+
+        <!-- Horoscope Section -->
+        <div id="horoscope-section">
+            <h3>Your Daily Horoscope</h3>
+            <input type="text" id="zodiac-sign" placeholder="Enter Zodiac Sign">
+            <button onclick="displayHoroscope()">Get Horoscope</button>
+            <p id="horoscope-text">Your horoscope will appear here.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
